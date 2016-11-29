@@ -1,0 +1,93 @@
+{
+  "name": "drupal-composer/drupal-project",
+  "description": "Project template for Drupal 8 projects with composer",
+  "type": "project",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "",
+      "role": ""
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.drupal-composer.org"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.0.20",
+    "drupal-composer/drupal-scaffold": "^1.3.1",
+    "cweagans/composer-patches": "~1.0",
+    "drupal/core": "~8.0",
+    "drush/drush": "~8.0",
+    "drupal/console": "1.0.0-alpha2",
+    "drupal/admin_toolbar": "~8.0",
+    "drupal/ctools": "~8.0",
+    "drupal/pathauto": "~8.0",
+    "drupal/adminimal_theme": "^8.1",
+    "drupal/bootstrap": "~8.1",
+    "drupal/xmlsitemap": "~8.0",
+    "drupal/video_embed_field": "~8.0",
+    "drupal/menu_block": "^8.1",
+    "drupal/metatag": "8.x",
+    "drupal/views_field_view": "~8.0",
+    "drupal/imce": "~8.0",
+    "drupal/stage_file_proxy": "~8.0",
+    "drupal/bootstrap_clean_blog": "~8.0",
+    "drupal/nexus": "~8.0",
+    "drupal/drupal8_zymphonies_theme": "~8.0",
+    "drupal/paxton": "~8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8",
+    "symfony/css-selector": "2.7.*",
+    "drupal/devel": "~8.0",
+    "drupal/examples": "~8.0"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ]
+  },
+  "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "post-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::buildScaffold",
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ],
+    "post-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::buildScaffold",
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ]
+  },
+  "extra": {
+    "patches": {
+      "drupal/core": {
+          "Non-progressive batch operations not possible": "https://www.drupal.org/files/issues/core-batch-638712-41.patch",
+          "Display entity type on entity autocomplete search": "patches/entity_autocomplete_type.patch"
+      },
+      "drupal/config_installer": {
+        "No profile dependencies": "patches/config_installer.patch"
+      },
+      "drupal/menu_block": {
+        "Fix some notices": "patches/menu_block_notices.patch"
+      },
+      "drupal/view_unpublished": {
+        "Fix view any unpublished permission": "https://www.drupal.org/files/issues/2786109.2.patch"
+      }
+    },
+    "installer-paths": {
+      "html/core": ["type:drupal-core"],
+      "html/modules/contrib/{$name}": ["type:drupal-module"],
+      "html/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "html/themes/contrib/{$name}": ["type:drupal-theme"],
+      "drush/contrib/{$name}": ["type:drupal-drush"]
+    }
+  }
+}
