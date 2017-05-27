@@ -1,0 +1,12 @@
+uuid: 7378698c-0ed0-47f2-84ad-61192250b561
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Ji1C4rKt3Ag8aYYOpOuZ2gmsxB29QzJqynAx98Xk4JI
+id: node.image_2_3_right
+label: 'Image 2/3 right'
+targetEntityType: node
+cache: true

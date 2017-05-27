@@ -1,0 +1,25 @@
+uuid: 2b17b319-4be2-4d12-92dd-2af933f28c9d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cta
+    - node.type.hero_component
+  module:
+    - link
+_core:
+  default_config_hash: CmKd5z_D2-73wwzEsiDr3as9ZK7GN3NRq5P65uxPCuA
+id: node.hero_component.field_cta
+field_name: field_cta
+entity_type: node
+bundle: hero_component
+label: CTA
+description: 'Call To Action field'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

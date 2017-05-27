@@ -1,0 +1,20 @@
+uuid: a9440d88-5b6d-4641-a9d8-8057335e4136
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jdm
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: jdm_local_actions
+theme: jdm
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

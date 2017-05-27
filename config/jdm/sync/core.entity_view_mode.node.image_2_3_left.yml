@@ -1,0 +1,12 @@
+uuid: ec3b991f-c5b7-4cb1-a1ce-df850e248e6e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: v86hkY26jpXx59iktvOEqUrCklJRHx5RaWmC6EqKmaE
+id: node.image_2_3_left
+label: 'Image 2/3 left'
+targetEntityType: node
+cache: true

@@ -1,0 +1,22 @@
+uuid: a36391fb-536e-4740-9150-d56d98c19c2f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jdm
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: jdm_local_tasks
+theme: jdm
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

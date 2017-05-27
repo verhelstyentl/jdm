@@ -1,0 +1,22 @@
+uuid: 0b879027-6756-46c0-8214-aacb5f9462e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jdm
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: jdm_content
+theme: jdm
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

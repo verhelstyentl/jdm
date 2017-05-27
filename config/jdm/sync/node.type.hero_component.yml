@@ -1,0 +1,19 @@
+uuid: 0e046dff-acff-475b-b2c3-9e770b7f4b74
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: AlbUVGLlYmFuMwQWs-3dRilDo82iqCX7FArNA3HUrZI
+name: 'Hero Component'
+type: hero_component
+description: "Hero Component \r\n\r\nxl beeld (100% width - vaste verhouding)\r\ntitel\r\nsubtitel\r\n1 of meerder cta's\r\n(enkel beeld is verplicht)"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

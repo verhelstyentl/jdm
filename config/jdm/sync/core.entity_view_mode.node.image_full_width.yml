@@ -1,0 +1,12 @@
+uuid: 946d656e-c5fe-4743-806d-95269ee0b334
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: yJl-x3bXxRN5o9Gmeg6x9uMeNe1YOI6bgwUIWUS4bGQ
+id: node.image_full_width
+label: 'Image full width'
+targetEntityType: node
+cache: true

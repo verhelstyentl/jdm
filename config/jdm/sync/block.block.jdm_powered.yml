@@ -1,0 +1,22 @@
+uuid: 3f0b251e-b323-4051-89ae-048027d15426
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - jdm
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: jdm_powered
+theme: jdm
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

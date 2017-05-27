@@ -1,0 +1,21 @@
+uuid: 93abc7f8-829f-4d80-a61a-120bd3c148d0
+langcode: nl
+status: true
+dependencies:
+  module:
+    - builder
+    - node
+_core:
+  default_config_hash: '-WGZnzvKins3v3Ncuff9-ipipYUgHP_2EHKYN1H54p0'
+id: node.field_page_builder
+field_name: field_page_builder
+entity_type: node
+type: builder
+settings: {  }
+module: builder
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

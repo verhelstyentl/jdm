@@ -1,0 +1,20 @@
+uuid: 409fc5ef-2d3d-4224-9acb-807f331c5713
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - jdm
+id: languageswitcher
+theme: jdm
+region: topnavigation
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 1978f1f7-b76a-42d7-8b1e-7f4039852553
+langcode: nl
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: qNNRUrwrZ2qDwC4Lw7AGt_gPjU0Rlc0c7znNnqM0vg4
+id: node.field_cta
+field_name: field_cta
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

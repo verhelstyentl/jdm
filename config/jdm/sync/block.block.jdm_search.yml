@@ -1,0 +1,22 @@
+uuid: 52c2dde3-448a-4f5e-ac52-bc18cbcf50e4
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - jdm
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: jdm_search
+theme: jdm
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

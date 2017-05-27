@@ -1,0 +1,12 @@
+uuid: eed049c3-00d0-4cc4-a22e-64e9c738805d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: mNFdTPmEjD6Bngg8G34A-Qgfc8uqlszWWloqx8zxiRQ
+id: node.archive
+label: Archive
+targetEntityType: node
+cache: true
