@@ -1,0 +1,11 @@
+global-styling:
+  version: 1.0
+  css:
+    theme:
+      assets/css/jdm.css: { }
+  js:
+    ../../../libraries/jasny-bootstrap/js/jasny-bootstrap.min.js: {}
+bootstrap-scripts:
+  js:
+    ../../../libraries/bootstrap-sass-twbs/assets/javascripts/bootstrap.js: {}
+

@@ -33,8 +33,6 @@
     "drupal/views_field_view": "~8.0",
     "drupal/imce": "~8.0",
     "drupal/stage_file_proxy": "~8.0",
-    "drupal/bootstrap_clean_blog": "~8.0",
-    "drupal/drupal8_zymphonies_theme": "~8.0",
     "drupal/flexslider": "2.0.0-beta1",
     "drupal/libraries": "3.x-dev",
     "drupal/inline_responsive_images": "^2.1"
