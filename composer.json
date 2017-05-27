@@ -12,7 +12,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://packagist.drupal-composer.org"
+      "url": "https://packages.drupal.org/8"
     }
   ],
   "require": {
@@ -29,15 +29,15 @@
     "drupal/bootstrap": "~8.1",
     "drupal/xmlsitemap": "~8.0",
     "drupal/video_embed_field": "~8.0",
-    "drupal/menu_block": "^8.1",
     "drupal/metatag": "8.x",
     "drupal/views_field_view": "~8.0",
     "drupal/imce": "~8.0",
     "drupal/stage_file_proxy": "~8.0",
     "drupal/bootstrap_clean_blog": "~8.0",
-    "drupal/nexus": "~8.0",
     "drupal/drupal8_zymphonies_theme": "~8.0",
-    "drupal/paxton": "~8.0"
+    "drupal/flexslider": "2.0.0-beta1",
+    "drupal/libraries": "3.x-dev",
+    "drupal/inline_responsive_images": "^2.1"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.8",
@@ -69,7 +69,6 @@
   "extra": {
     "patches": {
       "drupal/core": {
-          "Non-progressive batch operations not possible": "https://www.drupal.org/files/issues/core-batch-638712-41.patch",
           "Display entity type on entity autocomplete search": "patches/entity_autocomplete_type.patch"
       },
       "drupal/config_installer": {
@@ -80,6 +79,9 @@
       },
       "drupal/view_unpublished": {
         "Fix view any unpublished permission": "https://www.drupal.org/files/issues/2786109.2.patch"
+      },
+      "drupal/nivo_slider": {
+        "D8 patch": "https://www.drupal.org/files/issues/Renaming-and-Replacing-2800413-15.patch"
       }
     },
     "installer-paths": {

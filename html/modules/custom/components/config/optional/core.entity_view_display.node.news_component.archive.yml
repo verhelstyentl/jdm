@@ -1,0 +1,23 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.archive
+        - field.field.node.news_component.field_page_builder
+        - field.field.node.news_component.field_teaser_image
+        - node.type.news_component
+    module:
+        - user
+_core:
+    default_config_hash: RtrhAy8eJJ77bCMocY9QRJQsU7IQgj0s5dqZRy380aY
+id: node.news_component.archive
+targetEntityType: node
+bundle: news_component
+mode: archive
+content: {  }
+hidden:
+    entity_print_view: true
+    field_page_builder: true
+    field_teaser_image: true
+    langcode: true
+    links: true

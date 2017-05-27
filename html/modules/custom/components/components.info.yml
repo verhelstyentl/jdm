@@ -1,0 +1,6 @@
+name: Components
+type: module
+description: Components general module
+core: 8.x
+package: JDM
+

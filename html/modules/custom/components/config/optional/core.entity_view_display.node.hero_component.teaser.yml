@@ -1,0 +1,41 @@
+langcode: nl
+status: false
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.hero_component.field_hero_component_image
+        - field.field.node.hero_component.field_hero_component_subtitle
+        - field.field.node.hero_component.field_cta
+        - node.type.hero_component
+    module:
+        - image
+        - user
+_core:
+    default_config_hash: KXGrLaWY54iVgfzenAtVRW-uQjM0sqDm8u6vbX15QNQ
+id: node.hero_component.teaser
+targetEntityType: node
+bundle: hero_component
+mode: teaser
+content:
+    field_hero_component_image:
+        type: image
+        weight: 0
+        label: hidden
+        settings:
+            image_style: ''
+            image_link: ''
+        third_party_settings: {  }
+    field_hero_component_subtitle:
+        type: string
+        weight: 0
+        label: hidden
+        settings:
+            link_to_entity: false
+        third_party_settings: {  }
+    links:
+        weight: 100
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    field_cta: true
+    langcode: true

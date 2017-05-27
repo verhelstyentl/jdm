@@ -1,0 +1,8 @@
+name: Call to action
+type: module
+description: 'Provides a call to action link based on link field type.'
+core: 8.x
+package: JDM
+dependencies:
+  - field
+  - link

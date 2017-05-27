@@ -1,0 +1,11 @@
+langcode: nl
+status: true
+dependencies:
+    module:
+        - node
+_core:
+    default_config_hash: 4OejaoX_McIF7BPtDEfIGq_4-OYvQqUOJDk1awTLotA
+id: node.image_full_width
+label: 'Image full width'
+targetEntityType: node
+cache: true

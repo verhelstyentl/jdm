@@ -1,0 +1,24 @@
+diff --git a/config_installer.profile b/config_installer.profile
+index a5044a1..596def3 100644
+--- a/config_installer.profile
++++ b/config_installer.profile
+@@ -188,9 +188,16 @@ function config_install_batch_finish($success, $results, $operations) {
+ function config_installer_install_uninstalled_profile_dependencies(array &$context, ConfigImporter $config_importer) {
+   if (!array_key_exists('missing_profile_dependencies', $context)) {
+     $profile = _config_installer_get_original_install_profile();
+-    $profile_file = drupal_get_path('profile', $profile) . "/$profile.info.yml";
+-    $info = \Drupal::service('info_parser')->parse($profile_file);
+-    $context['missing_profile_dependencies'] = array_diff($info['dependencies'], array_keys(\Drupal::moduleHandler()->getModuleList()));
++
++    if (!empty($profile)) {
++      $profile_file = drupal_get_path('profile', $profile) . "/$profile.info.yml";
++      $info = \Drupal::service('info_parser')->parse($profile_file);
++    }
++
++    $context['missing_profile_dependencies'] = !empty($info['dependencies'])
++      ? array_diff($info['dependencies'], array_keys(\Drupal::moduleHandler()->getModuleList()))
++      : array();
++
+     if (count($context['missing_profile_dependencies']) === 0) {
+       $context['finished'] = 1;
+       return;

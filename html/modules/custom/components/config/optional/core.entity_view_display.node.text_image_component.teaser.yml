@@ -1,0 +1,37 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.text_image_component.field_text_image_component_cont
+        - field.field.node.text_image_component.field_text_image_component_image
+        - field.field.node.text_image_component.field_text_image_component_iorv
+        - field.field.node.text_image_component.field_text_image_component_video
+        - node.type.text_image_component
+    module:
+        - text
+        - user
+_core:
+    default_config_hash: zm1-QcohV325VsPqa_rq7B0XrsLjaaDlH-JfgzuB1JQ
+id: node.text_image_component.teaser
+targetEntityType: node
+bundle: text_image_component
+mode: teaser
+content:
+    field_text_image_component_cont:
+        type: text_trimmed
+        weight: 0
+        label: hidden
+        settings:
+            trim_length: 600
+        third_party_settings: {  }
+    links:
+        weight: 1
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    entity_print_view: true
+    field_text_image_component_image: true
+    field_text_image_component_iorv: true
+    field_text_image_component_video: true
+    langcode: true

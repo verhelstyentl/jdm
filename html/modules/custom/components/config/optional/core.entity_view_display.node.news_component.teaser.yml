@@ -1,0 +1,32 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.news_component.field_page_builder
+        - field.field.node.news_component.field_teaser_image
+        - image.style.teaser
+        - node.type.news_component
+    module:
+        - image
+        - user
+_core:
+    default_config_hash: d2HlBxFOqwncS7vP0xG__Z3xVabVrPww3btRBHPQoxg
+id: node.news_component.teaser
+targetEntityType: node
+bundle: news_component
+mode: teaser
+content:
+    field_teaser_image:
+        type: image
+        weight: 0
+        label: hidden
+        settings:
+            image_style: teaser
+            image_link: content
+        third_party_settings: {  }
+hidden:
+    entity_print_view: true
+    field_page_builder: true
+    langcode: true
+    links: true

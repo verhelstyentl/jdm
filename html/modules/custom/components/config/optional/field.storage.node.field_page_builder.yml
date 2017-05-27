@@ -1,0 +1,20 @@
+langcode: nl
+status: true
+dependencies:
+    module:
+        - builder
+        - node
+_core:
+    default_config_hash: JVw8YUp0V65hZpQC8QuJ9YC0jaFEoQNDj3Niu5N9KKU
+id: node.field_page_builder
+field_name: field_page_builder
+entity_type: node
+type: builder
+settings: {  }
+module: builder
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

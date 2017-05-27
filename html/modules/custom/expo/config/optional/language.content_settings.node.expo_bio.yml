@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.expo_bio
+id: node.expo_bio
+target_entity_type_id: node
+target_bundle: expo_bio
+default_langcode: site_default
+language_alterable: false

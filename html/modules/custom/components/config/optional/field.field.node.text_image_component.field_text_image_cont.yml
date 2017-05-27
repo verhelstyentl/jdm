@@ -1,0 +1,23 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_text_image_component_cont
+        - node.type.text_image_component
+    module:
+        - text
+_core:
+    default_config_hash: rMvr1WpO8x3Nld7OrPVF2QicX1L5n2zcB-LElFa8Bmk
+id: node.text_image_component.field_text_image_component_cont
+field_name: field_text_image_component_cont
+entity_type: node
+bundle: text_image_component
+label: Content
+description: 'Text Image Content'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: false
+field_type: text_with_summary

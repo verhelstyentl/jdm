@@ -1,0 +1,50 @@
+diff --git a/menu_block.module b/menu_block.module
+index b4d97f6..01defea 100644
+--- a/menu_block.module
++++ b/menu_block.module
+@@ -10,9 +10,12 @@ function menu_block_theme_suggestions_block(array $variables) {
+ 
+   // Check if this is a menu_block block.
+   if (isset($variables['elements']['#base_plugin_id']) && $variables['elements']['#base_plugin_id'] == 'menu_block') {
++    $uid = '';
+     $menu_name = strtr($variables['elements']['#derivative_plugin_id'], '-', '_');
+-    $region = $variables['elements']['#configuration']['region'];
+-    $uid = strtr($variables['elements']['#configuration']['uuid'], '-', '_');
++    $region = !empty($variables['elements']['#configuration']['region'])?$variables['elements']['#configuration']['region']:'';
++    if(!empty($variables['elements']['#configuration']['uuid'])) {
++      $uid = strtr($variables['elements']['#configuration']['uuid'], '-', '_');
++    }
+     $suggestions = array(
+       'block__menu_block__region_' . $region,
+       'block__menu_block__' . $menu_name . '__region_' . $region,
+@@ -49,7 +52,10 @@ function menu_block_theme_suggestions_block_alter(array &$suggestions, array $va
+  */
+ function menu_block_theme_suggestions_menu(array $variables) {
+   $suggestions = array();
+-  $menu_name = strtr($variables['menu_name'], '-', '_');
++  $menu_name = '';
++  if(!empty($variables['menu_name'])) {
++    $menu_name = strtr($variables['menu_name'], '-', '_');
++  }
+   $suggestion_prefix = 'menu__menu_block_' . $menu_name . '_region_';
+ 
+   // We do not have access to the block's configuration from inside the "menu"
+diff --git a/src/Plugin/Block/MenuBlock.php b/src/Plugin/Block/MenuBlock.php
+index bf50b42..ea3f4df 100644
+--- a/src/Plugin/Block/MenuBlock.php
++++ b/src/Plugin/Block/MenuBlock.php
+@@ -147,10 +147,12 @@ class MenuBlock extends SystemMenuBlock {
+     // Create a very long theme suggestion; we will split it into shorter, more
+     // useful suggestions later.
+     // @see menu_block_theme_suggestions_menu()
++    $uuid = !empty($this->configuration['uuid'])?$this->configuration['uuid']:'';
++    $region = !empty($this->configuration['region'])?$this->configuration['region']:'';
+     $build['#theme'] = 'menu__menu_block_'
+       . strtr($menu_name, '-', '_')
+-      . '_region_' . $this->configuration['region']
+-      . '_uid_' . strtr($this->configuration['uuid'], '-', '_');
++      . '_region_' . $region
++      . '_uid_' . strtr($uuid, '-', '_');
+     return $build;
+   }
+ 

@@ -1,0 +1,15 @@
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+    default_config_hash: BPjApYQV_4Qqm_EcXlR2Ibhcij8UdaSQ60z1ZD6MZeQ
+name: teaser
+label: Teaser
+effects:
+    965ca3f1-533a-4b50-b17d-3bb28797d704:
+        uuid: 965ca3f1-533a-4b50-b17d-3bb28797d704
+        id: image_scale_and_crop
+        weight: 1
+        data:
+            width: 768
+            height: 512

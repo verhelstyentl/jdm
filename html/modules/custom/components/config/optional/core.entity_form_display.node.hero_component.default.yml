@@ -1,0 +1,75 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.field.node.hero_component.field_hero_component_image
+        - field.field.node.hero_component.field_hero_component_subtitle
+        - field.field.node.hero_component.field_cta
+        - image.style.thumbnail
+        - node.type.hero_component
+    module:
+        - cta
+        - image
+        - scheduler
+        - workbench_moderation
+_core:
+    default_config_hash: jk6Z739uduXGgDMAJ-J2M7D0NnkrN0lG8NGbymCIrAs
+id: node.hero_component.default
+targetEntityType: node
+bundle: hero_component
+mode: default
+content:
+    field_hero_component_image:
+        type: image_image
+        weight: 0
+        settings:
+            progress_indicator: throbber
+            preview_image_style: thumbnail
+        third_party_settings: {  }
+    field_hero_component_subtitle:
+        type: string_textfield
+        weight: 2
+        settings:
+            size: 60
+            placeholder: ''
+        third_party_settings: {  }
+    field_cta:
+        weight: 3
+        settings:
+            placeholder_url: ''
+            placeholder_title: ''
+            classes: "btn btn-warning;Primary\nbtn btn-success;Secondary"
+        third_party_settings: {  }
+        type: cta_field_widget
+    langcode:
+        type: language_select
+        weight: 4
+        settings: {  }
+        third_party_settings: {  }
+    publish_on:
+        type: datetime_timestamp_no_default
+        weight: 30
+        settings: {  }
+        third_party_settings: {  }
+    title:
+        type: string_textfield
+        weight: 1
+        settings:
+            size: 60
+            placeholder: ''
+        third_party_settings: {  }
+    translation:
+        weight: 5
+        settings: {  }
+        third_party_settings: {  }
+    unpublish_on:
+        type: datetime_timestamp_no_default
+        weight: 30
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    created: true
+    path: true
+    promote: true
+    sticky: true
+    uid: true

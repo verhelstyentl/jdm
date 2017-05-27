@@ -1,0 +1,19 @@
+langcode: nl
+status: true
+dependencies:
+    module:
+        - menu_ui
+third_party_settings:
+    menu_ui:
+        available_menus:
+            - main
+        parent: 'main:'
+_core:
+    default_config_hash: Im1BwArj56eydnTO1aO3Qes-NiihOBVw72-tphx4icE
+name: 'Text/Image Component'
+type: text_image_component
+description: "Text/Image Component\r\n\r\n1 afbeelding met dropdown ivm positie (links 1/3de, links 2/3de, rechts 1/3de, rechts 2/3de, volledige breedte)\r\nvideo (idem aan afbeelding maar exclusief aan elkaar)\r\ntitel\r\nintro als tag gebruiken\r\ncontent (wysiwyg)\r\n(layout verandert afhankelijk van de ingevulde velden, niets is verplicht)"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

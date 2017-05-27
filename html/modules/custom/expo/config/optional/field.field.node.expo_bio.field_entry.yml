@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entry
+    - node.type.expo_bio
+id: node.expo_bio.field_entry
+field_name: field_entry
+entity_type: node
+bundle: expo_bio
+label: Entry
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

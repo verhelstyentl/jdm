@@ -1,0 +1,12 @@
+name: Expo
+type: module
+description: Expo module
+core: 8.x
+package: JDM
+
+dependencies:
+- config_translation
+- content_translation
+- pathauto
+- expo_personal_field
+

@@ -1,0 +1,39 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.field.node.news_component.field_page_builder
+        - field.field.node.news_component.field_teaser_image
+        - node.type.news_component
+    module:
+        - builder
+        - image
+        - user
+_core:
+    default_config_hash: RtrhAy8eJJ77bCMocY9QRJQsU7IQgj0s5dqZRy380aY
+id: node.news_component.default
+targetEntityType: node
+bundle: news_component
+mode: default
+content:
+    field_page_builder:
+        type: builder_formatter
+        weight: 2
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+    field_teaser_image:
+        type: image
+        weight: 1
+        label: above
+        settings:
+            image_style: ''
+            image_link: ''
+        third_party_settings: {  }
+    links:
+        weight: 0
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    entity_print_view: true
+    langcode: true

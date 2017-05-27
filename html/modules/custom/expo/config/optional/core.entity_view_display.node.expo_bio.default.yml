@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.expo_bio.field_entry
+    - node.type.expo_bio
+  module:
+    - user
+id: node.expo_bio.default
+targetEntityType: node
+bundle: expo_bio
+mode: default
+content:
+  field_entry:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

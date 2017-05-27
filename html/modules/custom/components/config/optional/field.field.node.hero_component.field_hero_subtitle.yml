@@ -1,0 +1,20 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_hero_component_subtitle
+        - node.type.hero_component
+_core:
+    default_config_hash: TJ3d8Y1yWyhMzE9n0R1TVN0N5KZix9qAAK7S4srbKEs
+id: node.hero_component.field_hero_component_subtitle
+field_name: field_hero_component_subtitle
+entity_type: node
+bundle: hero_component
+label: subtitle
+description: 'Hero subtitle'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_page_builder
+        - node.type.news_component
+    module:
+        - builder
+_core:
+    default_config_hash: A6h7Zw2pIpGZTXV4VOkCGYsKdoe1iPM9jPwrVfGv9E4
+id: node.news_component.field_page_builder
+field_name: field_page_builder
+entity_type: node
+bundle: news_component
+label: 'Page builder'
+description: ''
+required: false
+translatable: true
+default_value:
+    -
+        bid: '0'
+default_value_callback: ''
+settings: {  }
+field_type: builder

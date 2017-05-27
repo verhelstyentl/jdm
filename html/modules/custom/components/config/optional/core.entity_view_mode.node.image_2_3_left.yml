@@ -1,0 +1,11 @@
+langcode: nl
+status: true
+dependencies:
+    module:
+        - node
+_core:
+    default_config_hash: EBWHM0l67vh0A5cyiG8OeqzZoszV5McaD7ScSoH4qNw
+id: node.image_2_3_left
+label: 'Image 2/3 left'
+targetEntityType: node
+cache: true

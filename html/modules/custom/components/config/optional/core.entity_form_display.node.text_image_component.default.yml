@@ -1,0 +1,87 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.field.node.text_image_component.field_text_image_component_cont
+        - field.field.node.text_image_component.field_text_image_component_image
+        - field.field.node.text_image_component.field_text_image_component_iorv
+        - field.field.node.text_image_component.field_text_image_component_video
+        - image.style.thumbnail
+        - node.type.text_image_component
+    module:
+        - image
+        - text
+        - video_embed_field
+        - workbench_moderation
+_core:
+    default_config_hash: 8Kgag3a1ywgGUz1Bb143fH-VFD180PylwnjyF09b5fQ
+id: node.text_image_component.default
+targetEntityType: node
+bundle: text_image_component
+mode: default
+content:
+    field_text_image_component_cont:
+        weight: 5
+        settings:
+            rows: 9
+            summary_rows: 3
+            placeholder: ''
+        third_party_settings: {  }
+        type: text_textarea_with_summary
+    field_text_image_component_image:
+        weight: 3
+        settings:
+            progress_indicator: throbber
+            preview_image_style: thumbnail
+        third_party_settings: {  }
+        type: image_image
+    field_text_image_component_iorv:
+        weight: 2
+        settings: {  }
+        third_party_settings: {  }
+        type: options_buttons
+    field_text_image_component_video:
+        weight: 4
+        settings: {  }
+        third_party_settings: {  }
+        type: video_embed_field_textfield
+    field_file:
+        weight: 31
+        settings:
+            progress_indicator: throbber
+        third_party_settings:
+            imce:
+                enabled: true
+        type: file_generic
+    langcode:
+        type: language_select
+        weight: 1
+        settings: {  }
+        third_party_settings: {  }
+    publish_on:
+        type: datetime_timestamp_no_default
+        weight: 30
+        settings: {  }
+        third_party_settings: {  }
+    title:
+        type: string_textfield
+        weight: 0
+        settings:
+            size: 60
+            placeholder: ''
+        third_party_settings: {  }
+    translation:
+        weight: 6
+        settings: {  }
+        third_party_settings: {  }
+    unpublish_on:
+        type: datetime_timestamp_no_default
+        weight: 30
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    created: true
+    path: true
+    promote: true
+    sticky: true
+    uid: true

@@ -1,0 +1,21 @@
+uuid: 4c3ee5ba-ccda-4ba8-a16f-97ff5e26431a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.expo_bio.field_entry
+    - node.type.expo_bio
+  module:
+    - user
+id: node.expo_bio.teaser
+targetEntityType: node
+bundle: expo_bio
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_entry: true
+  langcode: true

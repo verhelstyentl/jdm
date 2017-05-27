@@ -1,0 +1,9 @@
+name: Expo personal field
+type: module
+description: 'Provides a textbox with checkbox for personal for the Expo year content type'
+core: 8.x
+package: JDM
+
+dependencies:
+  - field
+  - editor

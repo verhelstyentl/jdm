@@ -1,0 +1,26 @@
+langcode: nl
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_text_image_component_video
+        - node.type.text_image_component
+    module:
+        - video_embed_field
+_core:
+    default_config_hash: pbprvdjsZHjfRnd_StMWklfXa866HTD53gRWWYYt9AU
+id: node.text_image_component.field_text_image_component_video
+field_name: field_text_image_component_video
+entity_type: node
+bundle: text_image_component
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+    allowed_providers:
+        vimeo: vimeo
+        youtube: youtube
+        youtube_playlist: '0'
+field_type: video_embed_field
