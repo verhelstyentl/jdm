@@ -1,0 +1,32 @@
+.language-switcher {
+  @include link-invert();
+  @include link-active();
+  margin: 0;
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+    margin-top:$margin-normal;
+  }
+  li {
+    padding: 0;
+    &.last {
+      a {
+        border: none;
+        padding-right: 0;
+      }
+    }
+    a {
+      @media (max-width: $screen-xs-max) {
+        @include font-size(16);
+        padding-right: $margin-normal;
+        margin-right:$margin-normal;
+      }
+      @include font-size(13);
+      border-right: 1px solid $color-tui-white;
+      padding-right: $margin-half;
+      cursor:pointer;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
+  }
+}

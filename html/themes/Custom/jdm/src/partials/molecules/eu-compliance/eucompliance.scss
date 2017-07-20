@@ -1,0 +1,18 @@
+#sliding-popup {
+  @include box-shadow(0 0 11px #333);
+  padding:10px 0;
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+    .popup-text {
+      width: 100%;
+      text-align: center;
+      p{
+        margin:0;
+      }
+    }
+    .agree-button{
+      cursor: pointer;
+    }
+  }
+}
